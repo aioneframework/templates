@@ -6,7 +6,7 @@ define( 'BASE_DOMAIN', 'http://manage.aioneframework.com' ); // domain where pre
 define( 'BASE_URL', BASE_DOMAIN . '/templates/' ); // url where this preview bar is installed
 define( 'ENVATO_USERNAME', 'ProteusThemes' ); // for the refferal link
 define( 'AUTHOR', 'ProteusThemes' ); // displayed in author meta tags
-define( 'LOGO_LINK', 'http://themeforest.net/user/ProteusThemes/portfolio?ref=ProteusThemes' ); // Linked wrapped around logo
+define( 'LOGO_LINK', 'https://cdn.aioneframework.com/assets/images/aione-framework-logo-small.png' ); // Linked wrapped around logo
 define( 'MADE_BY_LINK', BASE_DOMAIN ); // displayed in author meta tags
 define( 'MADE_BY_TEXT', 'ProteusThemes' ); // displayed in author meta tags
 define( 'FB_TRACKING_PX', '650819048377184'); // facebook tracking pixel

@@ -49,7 +49,7 @@ if( key_exists( @$_GET['theme'], $items ) ) {
 	<meta name="author" content="<?php echo AUTHOR; ?>">
 
 	<!--  = CSS stylesheets =  -->
-	<link rel="stylesheet" href="<?php echo BASE_URL; ?>preview/stylesheets/style.css?ver=<?php echo ASSETS_VERSION; ?>" type="text/css" media="all" />
+	<link rel="stylesheet" href="<?php echo BASE_URL; ?>preview/stylesheets/style.css" type="text/css" media="all" />
 
 	<!-- Fav icon -->
 	<link rel="shortcut icon" href="<?php echo BASE_DOMAIN; ?>/favicon.ico">
@@ -101,30 +101,30 @@ if( key_exists( @$_GET['theme'], $items ) ) {
 		</script>
 		<?php endif; ?>
 
-		<div class="preview" id="custom-preview">
+		<div class="preview" id="custom-preview-bar">
 			<!-- Envato Logo -->
-			<div class="preview__logo" href="#">
+			<div class="preview-bar__logo">
 				<a href="<?php echo LOGO_LINK; ?>">Envato Market</a>
 			</div>
 			<!-- Select Theme -->
-			<div class="preview__select-theme">
+			<div class="preview-bar__select-theme">
 				<?php echo $item['title_short']; ?>
-				<ul class="preview__select-theme__all-themes">
+				<ul class="preview-bar__select-theme__all-themes">
 					<?php foreach($items as $slug => $single_item) : ?>
 					<li><a href="<?php echo site_url('?theme=' . $slug); ?>"><?php echo $single_item['title_short']; ?></a></li>
 					<?php endforeach; ?>
 				</ul>
 			</div>
 			<!-- Made by -->
-			<span class="preview__proteusthemes">made by <a href="<?php echo MADE_BY_LINK; ?>" target="_blank"><?php echo MADE_BY_TEXT; ?></a></span>
+			<span class="preview-bar__proteusthemes">made by <a href="<?php echo MADE_BY_LINK; ?>" target="_blank"><?php echo MADE_BY_TEXT; ?></a></span>
 			<!-- Close Frame -->
-			<a class="preview__remove-frame  js-link-to-demo" href="<?php echo $item['demo_url']; ?>" title="Close This Frame">
-				<img class="preview__remove-frame__x" src="preview/images/x.png"> <span class="preview__remove-frame__text">Remove Frame</span>
+			<a class="preview-bar__remove-frame  js-link-to-demo" href="<?php echo $item['demo_url']; ?>" title="Close This Frame">
+				<img class="preview-bar__remove-frame__x" src="preview-bar/images/x.png"> <span class="preview-bar__remove-frame__text">Remove Frame</span>
 			</a>
 			<!-- Buy Now Button -->
-			<a class="preview__purchase-button" href="<?php echo $item['url']; ?>&ref=<?php echo ENVATO_USERNAME; ?>">Buy now</a>
+			<a class="preview-bar__purchase-button" href="<?php echo $item['url']; ?>&ref=<?php echo ENVATO_USERNAME; ?>">Buy now</a>
 			<!-- Mobile/Tablet/Desktop switcher -->
-			<div class="preview__switcher js-switcher">
+			<div class="preview-bar__switcher js-switcher">
 				<a href="#" class="switcher-btn switcher-btn--active switcher--desktop" data-switchto="desktop"><span></span></a>
 				<a href="#" class="switcher-btn switcher--tablet" data-switchto="tablet"><span></span></a>
 				<a href="#" class="switcher-btn switcher--mobile" data-switchto="mobile"><span></span></a>
