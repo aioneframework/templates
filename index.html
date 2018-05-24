@@ -1,0 +1,399 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="http://aioneframework.com/aioneframework/assets/css/aione.min.css">
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700,800,900">
+      <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet"> 
+      <script type="text/javascript" src="http://aioneframework.com/aioneframework/assets/js/vendor.js"></script>
+      <script type="text/javascript" src="http://aioneframework.com/aioneframework/assets/js/aione.js"></script>
+       <style type="text/css">
+         body{
+           font-family: 'Nunito', sans-serif;
+         }
+         ul li span{
+           font-size:18px; 
+         }
+         .aione-nav ul li:hover span{
+           color: orange;
+         }
+         #one .aione-nav ul li{
+            padding-top: 15px;
+         }
+         .border-btm{
+           border-bottom: 1px dashed #1685c2;
+           padding-bottom: 10px;
+         }
+         .social-facebook{
+          color: #076ca4;
+          font-size: 20px;
+         }
+         .social-twitter{
+          color: #1da1f2;
+          font-size: 20px;
+         }
+         .social-linkedin{
+          color: #0077b5;
+          font-size: 20px;
+         }
+         .social-github{
+          color: #000;
+          font-size: 20px;
+         }
+        .templte-hover:hover{
+          box-shadow:0px 0px 16px 1px #d1d1d1;
+         }
+        .btm-border:after {
+          display: inline-block;
+          content: "";
+          border-top: .2rem solid orange;
+          width: 7rem;
+          margin: 0 1rem -1rem -18rem;
+          }
+        .popular-after:after{
+          display: inline-block;
+          content: "";
+          border-top: .2rem solid orange;
+          width: 7rem;
+          margin: 0 1rem -1rem -10rem;
+         }
+        @media (max-width: 768px){
+         .toggle 
+         {
+            display:block;
+         }
+          ul
+         {
+            width: 100%;
+            display: none;
+         }
+         .active
+         {
+            display: block;
+         }
+         ul li
+         {
+            display: block;
+            text-align: center;
+         }
+        }
+       </style>
+     <script type="text/javascript">
+     $(document).ready(function(){
+         $('.menu').click(function(){
+           $('ul').toggleClass('active');
+     
+         });
+         $('ul li a').click(function(){
+           $('ul').removeClass('active');
+         });
+     });
+   </script>
+  </head>
+  <body>
+    <div id="aione_wrapper" class="aione-wrapper aione-layout- aione-theme-arcane">
+      <div class="aione-row">
+        <div id="aione_header" class="aione-header light"><div class="wrapper">
+        </div><!-- .wrapper -->
+        <div class="clear"></div>
+        </div>
+        <!-- End of header section -->
+        <div id="aione_main" class="aione_main fullwidth p-0">
+          <div class="wrapper">
+            <div id="aione_page_content" class="aione_page_content m-0">
+              <div class="wrapper">
+                <div class="">
+                  <section id="one">
+                    <div class="ar aione-border-bottom bg-grey bg-darken-4">
+                      <div class="ac l20 m50 s100">
+                         <div class="p-7">
+                            <a href=".html">
+                              <h3 class="font-weight-700 m-0 white">Template</h3>
+                              <p class="white line-height-20 font-size-14 pl-7">Best Free Template</p>
+                            </a>
+                          </div>
+                      </div>
+                      <div class="ac l50 m50 s100">
+                        <nav id="">
+                         <div class="aione-nav horizontal" style="border-bottom: none;">
+                            <ul id="aione_menu" class="aione-menu">
+                              <li class="aione-nav-item level0">
+                                <a href="#home"><span class="orange font-size-15 pr-25 nav-item-text" data-hover="Home">Categories</span></a>
+                                <ul>
+                                  <li><a href="#">Computer & Internet</li>
+                                  <li><a href="#">Bussiness & Service</li>
+                                  <li><a href="#">Fastion & Beauty</li>
+                                  <li><a href="#">Education & Book</li>
+                                  <li><a href="#">Food & Restaurant</li>
+                                  <li><a href="#">Health care</li>
+                                  <li><a href="#">Health Center</li>
+                                  <li><a href="#">Real Estate</li>
+                                </ul>
+                              </li>
+                              <li class="aione-nav-item level0">
+                                <a href="#seo"><span class="grey lighten-3 font-size-15 pr-25 nav-item-text" data-hover="Free Template">Free Template</span></a>
+                              </li>
+                              <li class="aione-nav-item level0">
+                                <a href="#team"><span class="grey lighten-3 font-size-15 pr-25 nav-item-text" data-hover="HTML/CSS">HTML/CSS</span></a>
+                              </li>
+                              <li class="aione-nav-item level0">
+                                <a href="#Login"><span class="grey lighten-3 font-size-15 pr-25 nav-item-text" data-hover="Login">Login</span></a>
+                              </li>
+                              <li class="aione-nav-item level0">
+                                <a href="#Contact"><span class="grey lighten-3 font-size-15 pr-25 nav-item-text" data-hover="Contact">Contact</span></a>
+                              </li>
+                            </ul> 
+                          </div>
+                          </nav>
+                      </div>
+                      <div class="ac l20 m20 s100 pt-15">
+                        <div class="field">
+                          <input class="aione-search-input" type="text" placeholder="Search" style="border-radius: 5px;">
+                        </div>
+                      </div>
+                      <div class="toggle aione-align-right pr-20 pt-10">
+                       <i class="ion-navicon-round menu white font-size-30" aria-hidden="true"></i>
+                    </div>
+                    </div>
+                  </section>
+                  <section>
+                    <div class="ar bg-grey bg-lighten-3 ">
+                      <div class="ac l70">
+                        <div class="aione-nav horizontal" style="border-bottom: none;">
+                           <ul id="aione_menu" class="aione-menu">
+                              <li><a href="#">All Item</a></li>
+                              <li><a href="#">Aioneframework</a></li>
+                              <li><a href="#">Website</a></li>
+                              <li><a href="#">Markiting</a></li>
+                              <li><a href="#">ecommerce</a></li>
+                              <li><a href="#">UI Design</a></li>
+                              <li><a href="#">HTML</a></li>
+                              <li><a href="#">Single</a></li>
+                              <li><a href="#">Personal</a></li>
+                          </ul>
+                         </div>
+                      </div>
+                      <div class="ac l30 pt-10">
+                        <div class="aione-align-right">
+                         <div class="social-links">
+                          <span class="social-facebook"><i class="fa fa-facebook"></i></span>
+                          <span class="social-github"><i class="fa fa-github"></i></span>
+                          <span class="social-twitter"><i class="fa fa-twitter"></i></span>
+                          <span class="social-linkedin"><i class="fa fa-linkedin"></i></span>
+                       </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                 
+                  <section>
+                    <div class="ar ph-7p">
+                      <div class="aione-align-center p-50">
+                        <h3 class="grey darken-4">Free HTML Website Templates & Aionframework Themes</h3>
+                        <p class="line-height-20">All these website templates are designed professionally and built on Aioneframework, HTML, CSS with clean and organized code. These free Aioneframework themes are fully responsive and cross-browser compatible and easy to customize. Download these free templates for your personal or commercial project.</p>
+                      </div>
+                      <div class="aione-align-center">
+                        <h4 class="grey darken-4 btm-border pb-20">Aioneframework Template Responsive</h4>
+                      </div>
+                      <div class="ac l33 m50 s100 mb-10 pt-20">
+                        <a href="#">
+                          <div class="p-2 aione-border templte-hover">
+                            <a href=""><img src="assets/images/imagebanner.png"></a>
+                            <p class="aione-align-center line-height-60">Hybrid Bootstrap Admin Template
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="ac l33 m50 s100 pt-20">
+                        <a href="#">
+                          <div class="p-2 aione-border templte-hover">
+                            <a href=""><img src="assets/images/imagebanner.png"></a>
+                            <p class="aione-align-center line-height-60">Multipurpose Website Template</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="ac l33 m50 s100 pt-20">
+                        <div class="p-2 aione-border templte-hover">
+                          <a href=""><img src="assets/images/imagebanner.png"></a>
+                          <p class="aione-align-center line-height-60">Responsive Template</p>
+                        </div>
+                      </div>
+                      <div class="clear"></div>
+                      <div class="ac l33 m50 s100 mb-10 ">
+                        <div class="p-2 aione-border templte-hover">
+                          <a href=""><img src="assets/images/imagebanner.png"></a>
+                          <p class="aione-align-center line-height-60">Corportaive Theme</p>
+                        </div>
+                      </div>
+                      <div class="ac l33 m50 s100">
+                        <div class="p-2 aione-border templte-hover">
+                          <a href=""><img src="assets/images/imagebanner.png"></a>
+                          <p class="aione-align-center line-height-60">Responsive Corportaive Theme</p>
+                        </div>
+                      </div>
+                      <div class="ac l33 m50 s100">
+                        <div class="p-2 aione-border templte-hover">
+                          <a href=""><img src="assets/images/imagebanner.png"></a>
+                          <p class="aione-align-center line-height-60">HTML Website Template</p>
+                        </div>
+                      </div>
+                      <div class="clear"></div>
+                      <div class="ac l33 m50 s100 mb-10">
+                        <div class="p-2 aione-border templte-hover">
+                          <a href=""><img src="assets/images/imagebanner.png"></a>
+                          <p class="aione-align-center line-height-60">Free Fitness Website Template</p>
+                        </div>
+                      </div>
+                      <div class="ac l33 m50 s100">
+                        <div class="p-2 aione-border templte-hover">
+                          <a href=""><img src="assets/images/imagebanner.png"></a>
+                          <p class="aione-align-center line-height-60">Best Event Management Responsive Design</p>
+                        </div>
+                      </div>
+                      <div class="ac l33 m50 s100">
+                        <div class="p-2 aione-border templte-hover">
+                          <a href=""><img src="assets/images/imagebanner.png"></a>
+                          <p class="aione-align-center line-height-60">Bussiness Responsive Template</p>
+                        </div>
+                      </div>
+                      </div>
+                  </section>
+                  <section>
+                    <div class="ar ph-7p">
+                       <div class="aione-align-center">
+                        <h4 class="grey darken-4 popular-after pb-20">Popular Template </h4>
+                      </div>
+                      <div class="ac l33 m50 s100 mb-10 pt-20">
+                        <div class="p-2 aione-border templte-hover">
+                          <a href=""><img src="assets/images/imagebanner.png"></a>
+                          <p class="aione-align-center line-height-60">Hybrid Bootstrap Admin Template</p>
+                        </div>
+                      </div>
+                      <div class="ac l33 m50 s100 pt-20">
+                        <div class="p-2 aione-border templte-hover">
+                          <a href=""><img src="assets/images/imagebanner.png"></a>
+                          <p class="aione-align-center line-height-60">Multipurpose Website Template</p>
+                        </div>
+                      </div>
+                      <div class="ac l33 m50 s100 pt-20">
+                        <div class="p-2 aione-border templte-hover">
+                          <a href=""><img src="assets/images/imagebanner.png"></a>
+                          <p class="aione-align-center line-height-60">Responsive Template</p>
+                        </div>
+                      </div>
+                      <div class="clear"></div>
+                      <div class="ac l33 m50 s100 mb-10 ">
+                        <div class="p-2 aione-border templte-hover">
+                          <a href=""><img src="assets/images/imagebanner.png"></a>
+                          <p class="aione-align-center line-height-60">Corportaive Theme</p>
+                        </div>
+                      </div>
+                      <div class="ac l33 m50 s100 ">
+                        <div class="p-2 aione-border templte-hover">
+                          <a href=""><img src="assets/images/imagebanner.png"></a>
+                          <p class="aione-align-center line-height-60">Responsive Corportaive Theme</p>
+                        </div>
+                      </div>
+                      <div class="ac l33 m50 s100 ">
+                        <div class="p-2 aione-border templte-hover">
+                          <a href=""><img src="assets/images/imagebanner.png"></a>
+                          <p class="aione-align-center line-height-60">HTML Website Template</p>
+                        </div>
+                      </div>
+                      <div class="clear"></div>
+                      <div class="ac l33 m50 s100 mb-10 ">
+                        <div class="p-2 aione-border templte-hover">
+                          <a href=""><img src="assets/images/imagebanner.png"></a>
+                          <p class="aione-align-center line-height-60">Free Fitness Website Template</p>
+                        </div>
+                      </div>
+                      <div class="ac l33 m50 s100 ">
+                        <div class="p-2 aione-border templte-hover">
+                          <a href=""><img src="assets/images/imagebanner.png"></a>
+                          <p class="aione-align-center line-height-60">Best Event Management Responsive Design</p>
+                        </div>
+                      </div>
+                      <div class="ac l33 m50 s100 ">
+                        <div class="p-2 aione-border templte-hover">
+                          <a href=""><img src="assets/images/imagebanner.png"></a>
+                          <p class="aione-align-center line-height-60">Bussiness Responsive Template</p>
+                        </div>
+                      </div>
+                      <div class="clear"></div>
+                      <div class="aione-align-center pt-30">
+                        <button style="background-color: #1685c2;">All Template</button>
+                      </div>
+                     </div>
+                     <section>
+                        <div class="ar ph-7p pt-30">
+                          <div class="ac l100 s100 m50">
+                            <h4 class="grey darken-4 line-height-30">
+                              Why download our free website templates?
+                            </h4>
+                            <p class="line-height-30 pb-30">WebThemez has a huge collection of free website template which are well crafted with professional designers and developed using best practices. These free templates are easy to modify and setup. Happy browsing :)</p>
+                          </div>
+                        </div>
+                     </section>
+                     <section>
+                       <div class="ar p-7p aione-align-center" style="background-color: #1685c2;">
+                         <div class="ac l25 m50 s100">
+                           <div class="">
+                             <h2 class="white font-weight-700">
+                               3456
+                             </h2>
+                             <p class="white">
+                               Themes & Templates
+                             </p>
+                           </div>
+                         </div>
+                         <div class="ac l25 m50 s100">
+                           <div class="">
+                             <h2 class="white font-weight-700">
+                               3456
+                             </h2>
+                             <p class="white">
+                               Members
+                             </p>
+                           </div>
+                         </div>
+                         <div class="ac l25 m50 s100">
+                           <div class="">
+                             <h2 class="white font-weight-700">
+                               3456
+                             </h2>
+                             <p class="white">
+                               Downloads
+                             </p>
+                           </div>
+                         </div>
+                         <div class="ac l25 m50 s100">
+                           <div class="">
+                             <h2 class="white font-weight-700">
+                               3456
+                             </h2>
+                             <p class="white">
+                               Facebook
+                             </p>
+                           </div>
+                         </div>
+                       </div>
+                     </section>
+                  </section>
+                 </div>
+              </div>
+            </div>
+          </div><!-- .wrapper -->  
+          </div>
+          <!-- Footer section -->
+          <div id="aione_footer" class="aione-footer dark ">
+          </div>
+          <!-- .aione-footer -->
+          <div id="aione_copyright" class="aione-copyright dark ">
+          </div>
+      </div>  
+    </div>  
+  </body>
+  </html>
+

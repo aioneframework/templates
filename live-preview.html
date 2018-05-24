@@ -1,0 +1,306 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="http://aioneframework.com/aioneframework/assets/css/aione.min.css">
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700,800,900">
+      <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet"> 
+      <script type="text/javascript" src="http://aioneframework.com/aioneframework/assets/js/vendor.js"></script>
+      <script type="text/javascript" src="http://aioneframework.com/aioneframework/assets/js/aione.js"></script>
+       <style type="text/css">
+         body{
+           font-family: 'Nunito', sans-serif;
+         }
+         ul li span{
+           font-size:18px; 
+         }
+         .aione-nav ul li:hover span{
+            color: orange;
+         }
+         #one .aione-nav ul li{
+            padding-top: 15px;
+         }
+         .border-btm{
+             border-bottom: 1px dashed #1685c2;
+             padding-bottom: 10px;
+         }
+         .social-facebook{
+            color: #076ca4;
+            font-size: 20px;
+         }
+         .social-twitter{
+            color: #1da1f2;
+            font-size: 20px;
+         }
+         .social-linkedin{
+            color: #0077b5;
+            font-size: 20px;
+         }
+         .social-github{
+            color: #000;
+            font-size: 20px;
+         }
+        .templte-hover:hover{
+            box-shadow:0px 0px 16px 1px #d1d1d1;
+         }
+        .btm-border:after {
+            display: inline-block;
+            content: "";
+            border-top: .2rem solid orange;
+            width: 7rem;
+            margin: 0 1rem -1rem -18rem;
+          }
+        .popular-after:after{
+            display: inline-block;
+            content: "";
+            border-top: .2rem solid orange;
+            width: 7rem;
+            margin: 0 1rem -1rem -10rem;
+         }
+         .on-hover{
+            display: none;
+         }
+         .social-links .social-facebook{
+              color: #ffffff;
+              font-size: 20px;
+              background-color: #4867aa;
+              border-radius: 5px;
+              padding: 3px 40px;
+              line-height: 35px;
+         }
+         .social-links .social-github{
+              color: #ffffff;
+              font-size: 20px;
+              background-color: #0374aa;
+              border-radius: 5px;
+              
+         }
+         img:hover .on-hover{
+            display: block;
+         }
+        @media (max-width: 768px){
+         .toggle 
+         {
+            display:block;
+         }
+          ul
+         {
+            width: 100%;
+            display: none;
+         }
+         .active
+         {
+            display: block;
+         }
+         ul li
+         {
+            display: block;
+            text-align: center;
+         }
+        }
+       </style>
+     <script type="text/javascript">
+     $(document).ready(function(){
+         $('.menu').click(function(){
+           $('ul').toggleClass('active');
+     
+         });
+         $('ul li a').click(function(){
+           $('ul').removeClass('active');
+         });
+     });
+   </script>
+  </head>
+  <body>
+    <div id="aione_wrapper" class="aione-wrapper aione-layout- aione-theme-arcane">
+      <div class="aione-row">
+        <div id="aione_header" class="aione-header light"><div class="wrapper">
+        </div><!-- .wrapper -->
+        <div class="clear"></div>
+        </div>
+        <!-- End of header section -->
+        <div id="aione_main" class="aione_main fullwidth p-0">
+          <div class="wrapper">
+            <div id="aione_page_content" class="aione_page_content m-0">
+              <div class="wrapper">
+                <div class="">
+                  <section id="one">
+                    <div class="ar aione-border-bottom bg-grey bg-darken-4">
+                      <div class="ac l20 m50 s100">
+                         <div class="p-7">
+                            <a href=".html">
+                              <h3 class="font-weight-700 m-0 white">Template</h3>
+                              <p class="white line-height-20 font-size-14 pl-7">
+                                Best Free Template
+                              </p>
+                            </a>
+                          </div>
+                      </div>
+                      <div class="ac l50 m50 s100">
+                        <nav id="">
+                         <div class="aione-nav horizontal" style="border-bottom: none;">
+                            <ul id="aione_menu" class="aione-menu">
+                              <li class="aione-nav-item level0">
+                                <a href="#home"><span class="orange font-size-15 pr-25 nav-item-text" data-hover="Home">Categories</span></a>
+                                <ul>
+                                  <li><a href="#">Computer & Internet</li>
+                                  <li><a href="#">Bussiness & Service</li>
+                                  <li><a href="#">Fastion & Beauty</li>
+                                  <li><a href="#">Education & Book</li>
+                                  <li><a href="#">Food & Restaurant</li>
+                                  <li><a href="#">Health care</li>
+                                  <li><a href="#">Health Center</li>
+                                  <li><a href="#">Real Estate</li>
+                                </ul>
+                              </li>
+                              <li class="aione-nav-item level0">
+                                <a href="#seo"><span class="grey lighten-3 font-size-15 pr-25 nav-item-text" data-hover="Free Template">Free Template</span></a>
+                              </li>
+                              <li class="aione-nav-item level0">
+                                <a href="#team"><span class="grey lighten-3 font-size-15 pr-25 nav-item-text" data-hover="HTML/CSS">HTML/CSS</span></a>
+                              </li>
+                              <li class="aione-nav-item level0">
+                                <a href="#Login"><span class="grey lighten-3 font-size-15 pr-25 nav-item-text" data-hover="Login">Login</span></a>
+                              </li>
+                              <li class="aione-nav-item level0">
+                                <a href="#Contact"><span class="grey lighten-3 font-size-15 pr-25 nav-item-text" data-hover="Contact">Contact</span></a>
+                              </li>
+                            </ul> 
+                          </div>
+                          </nav>
+                      </div>
+                      <div class="ac l20 m20 s100 pt-15">
+                        <div class="field ">
+                          <input class="aione-search-input" type="text" placeholder="Search" style="border-radius: 5px;">
+                        </div>
+                      </div>
+                      <div class="toggle aione-align-right pr-20 pt-10">
+                       <i class="ion-navicon-round menu white font-size-30" aria-hidden="true"></i>
+                    </div>
+                    </div>
+                  </section>
+                  <section>
+                    <div class="ar bg-grey bg-lighten-3">
+                      <div class="ac l70">
+                         <div class="aione-nav horizontal" style="border-bottom: none;">
+                           <ul id="aione_menu" class="aione-menu">
+                              <li><a href="#">All Item</a></li>
+                              <li><a href="#">Aioneframework</a></li>
+                              <li><a href="#">Website</a></li>
+                              <li><a href="#">Marketing</a></li>
+                              <li><a href="#">ecommerce</a></li>
+                              <li><a href="#">UI Design</a></li>
+                              <li><a href="#">HTML</a></li>
+                              <li><a href="#">Single</a></li>
+                              <li><a href="#">Personal</a></li>
+                          </ul>
+                         </div>
+                      </div>
+                      <div class="ac l30">
+                        <div class="aione-align-right pt-10">
+                         <div class="social-links">
+                            <span class="social-facebook"><i class="fa fa-facebook"></i></span>
+                            <span class="social-github"><i class="fa fa-github"></i></span>
+                            <span class="social-twitter"><i class="fa fa-twitter"></i></span>
+                            <span class="social-linkedin"><i class="fa fa-linkedin"></i></span>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                   <section>
+                    <div class="ar p-7p">
+                      <div class="ac l60 m50 s100">
+                        <div class=" aione-tabs horizontal theme-clean margin">
+                      <div class="nav">
+                        <div data-target="#tab_sollicitudin" class="">All Items</div>
+                        <div data-target="#tab_gravida" class="">Reviews</div>
+                        <div data-target="#tab_sagittarius" class="">Comments</div>
+                      </div>
+                      <div class="content">
+                        <div id="tab_sollicitudin" class="">
+                          <div>
+                            <h4>Health Center Free Aione Template</h4>
+                          </div>
+                        <div class="p-0 position-relative off-hover">
+                          <div class="aione-border p-10">
+                            <img src="assets/images/draaifauteuil.jpg">
+                            <div class="p-10 aione-align-center">
+                              <button>
+                                <a href="#" class="white">
+                                  <i class="ion-ios-pulse-strong"></i> Live Preview
+                                </a>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="pt-30">
+                            <h5>Please Share This----------------------------------</h5>
+                            <div class="social-links">
+                                <span class="social-facebook"><i class="fa fa-facebook"></i></span>
+                                <span class="social-github"><i class="fa fa-github"></i></span>
+                                <span class="social-twitter"><i class="fa fa-twitter"></i></span>
+                                <span class="social-linkedin"><i class="fa fa-linkedin"></i></span>
+                            </div>
+                          </div>
+                        <!-- <div class="position-absolute on-hover" style="top: 0;right: 0;left: 0;bottom: 0;background-color: #000;opacity: 0.6;">
+                       </div> -->
+                      </div>
+                      </div>
+                      <div id="tab_gravida" class="">
+                        <h3 class="aione-align-center pv-10 ">Gravida</h3>
+                        <p class="font-size-17 line-height-26 ph-50">Gordi omegs xerus orlando stango oftin lopus untempr tinlen implan ontrox nitrox prox reminant ipsum vertue acimous tectum exendil lacus inkin meridum insink tatocs eminet docardo.Vivamus in ligula lobortis mauris tempor rhoncus. Nam commodo felis augue, ut interdum tellus sodales vitae. Mauris convallis tempus euismod. Suspendisse tincidunt tristique ex a dictum. </p>
+                      </div>
+                      <div id="tab_sagittarius" class="">
+                        <h3 class="aione-align-center pv-10 ">Sagittarius</h3>
+                        <p class="font-size-17 line-height-26 ph-50">Sed sed nisl molestie, facilisis purus at, pellentesque est. Praesent felis urna, pulvinar sit amet nunc vel, suscipit dapibus nunc. Aliquam sed est in nibh molestie pellentesque. Quisque auctor sodales diam eu fermentum. Maecenas mattis placerat rhoncus. Nunc laoreet, erat ut posuere malesuada, felis diam vulputate turpis, in pellentesque metus lorem et mauris. Quisque efficitur mollis dui sit amet pretium. </p>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      <div class="ac l40 m40 s100">
+                        <div class="aione-border p-20">
+                            <div class="price ">
+                              <h5 class="font-weight-600 aione-border-bottom border-style-dashed pb-10">Price:  $<span class="font-size-40 orange" style="vertical-align:bottom;">39</span></h5>
+                              <div class="template-detail">
+                                <h4 class="grey darken-4 aione-border-bottom border-style-dashed pb-10">Template Detail</h4>
+                                <div class="line-height-30">
+                                  <b class="grey darken-4">Author:</b><span> Aioneframework</span>
+                                </div>
+                                <div class="line-height-30">
+                                  <b class="grey darken-4">Released: </b><span> May, 2018</span>
+                                </div>
+                                <div class="line-height-30">
+                                  <b class="grey darken-4">Licence:</b><span>  CC BY </span>
+                                </div>
+                                <div class="line-height-30">
+                                  <b class="grey darken-4">Credits:</b><span> Images from Unsplash</span>
+                                </div>
+                               </div>
+                              <div class="button aione-align-center pt-20">
+                                <button class="button bg-green"><i class="ion-arrow-down-a"></i> Download</button>
+                                <button class="button bg-light-blue"><i class="ion-link"></i> Backlinks</button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                 
+                 </div>
+              </div>
+            </div>
+          </div><!-- .wrapper -->  
+          </div>
+          <!-- Footer section -->
+          <div id="aione_footer" class="aione-footer dark ">
+          </div>
+          <!-- .aione-footer -->
+          <div id="aione_copyright" class="aione-copyright dark ">
+          </div>
+      </div>  
+    </div>  
+  </body>
+  </html>
+
