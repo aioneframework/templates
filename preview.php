@@ -119,7 +119,7 @@ if( key_exists( @$_GET['theme'], $items ) ) {
 			<span class="preview-bar__proteusthemes">made by <a href="<?php echo MADE_BY_LINK; ?>" target="_blank"><?php echo MADE_BY_TEXT; ?></a></span>
 			<!-- Close Frame -->
 			<a class="preview-bar__remove-frame  js-link-to-demo" href="<?php echo $item['demo_url']; ?>" title="Close This Frame">
-				<img class="preview-bar__remove-frame__x" src="preview-bar/images/x.png"> <span class="preview-bar__remove-frame__text">Remove Frame</span>
+				<!--<img class="preview-bar__remove-frame__x" src="preview-bar/images/">  <span class="preview-bar__remove-frame__text">Remove Frame</span> -->
 			</a>
 			<!-- Buy Now Button -->
 			<a class="preview-bar__purchase-button" href="<?php echo $item['url']; ?>&ref=<?php echo ENVATO_USERNAME; ?>">Buy now</a>
