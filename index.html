@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
+      <title>templates</title>
       <link rel="stylesheet" type="text/css" href="http://aioneframework.com/aioneframework/assets/css/aione.min.css">
-      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700,800,900">
-      <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
       <link rel="stylesheet" type="text/css" href="assets/css/style.css">
       <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-      <script type="text/javascript" src="http://aioneframework.com/aioneframework/assets/js/vendor.js"></script>
-      <script type="text/javascript" src="http://aioneframework.com/aioneframework/assets/js/aione.js"></script>
+      <script type="text/javascript" defer src="http://aioneframework.com/aioneframework/assets/js/vendor.min.js"></script>
+      <script type="text/javascript" defer src="http://aioneframework.com/aioneframework/assets/js/aione.min.js"></script>
       <style type="text/css">
          body{
          font-family: 'Nunito', sans-serif;
@@ -36,10 +34,14 @@
          .field{
          padding: 4px 0 10px 0;
          }
-         button{
+         .aione-sort-button{
          background-color: #1570a6;
          margin: 6px 0 5px 0;
          padding: 8px 30px 8px 30px;
+         color: white;
+         outline: none;
+         border: 0px;
+
          }
          .aione-copyright
          {
@@ -49,6 +51,14 @@
          .aione-copyright.dark 
          {
          background-color: #121519;
+         }
+         .aione-sort-button.asc:after 
+         {
+            display: none;
+         }
+         .aione-sort-button.desc:after
+          {
+              display: none;
          }
       </style>
       </script>
@@ -67,148 +77,168 @@
                <div class="wrapper">
                   <div id="aione_page_content" class="aione_page_content m-0">
                      <div class="wrapper">
-                        <div class="">
+                        <div class="aione-search">
                            <section>
                               <div class="ar bg-grey bg-lighten-2 ph-20 pt-17 pb-10">
                                  <div class="ac l60 m60 s100">
+                                 	<div>
                                     <div class="field ">
-                                       <input type="text" class="aione-search-input" data-search="aione-search-item" placeholder="Search" />
+                                       <input type="text" class="aione-search-input" data-search="theme aione-search-item " placeholder="Search" />
                                     </div>
                                  </div>
+                              </div>
                                  <div class="ac l40 m40 s100">
-                                    <div class="aione-align-right">
-                                       <button class="aione-sort-button button" data-sort="Template">Template</button>
-                                       <button class="aione-sort-button button" data-sort="Theme">Theme</button>
-                                       <button class="aione-sort-button button" data-sort="Theme">Theme</button>
+                                    <div class="aione-align-center ">
+                                       <button class="aione-sort-button" data-sort="Template">Template</button>
+                                       <button class="aione-sort-button button asc white" data-sort="theme">Theme</button>
+                                       <button class="aione-sort-button" data-sort="Theme">Theme</button>
                                     </div>
                                  </div>
                               </div>
                            </section>
                            <section>
                               <div class="ar ph-7p">
+                                 
                                  <div class="aione-align-center p-50">
                                     <h2 style="color: #333333;" class="font-weight-300 font-size-45">Aioneframework Templates</h2>
                                     <p style="color: #82878C" class="aione-align-center font-weight-300 pb-20 font-size-19">All these website templates are designed professionally and built using Aioneframework</p>
                                  </div>
-                                 <div class="ac l33 m50 s100 mb-10 pt-20 aione-search-list">
+                                 <div class=" aione-search-list">
+                                 <div class="ac l33 m50 s100 pv-15 aione-search-list">
                                     <div class="p-2 aione-border templte-hover">
-                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/template-cor.png"/></a>
-                                       <p class="aione-align-center line-height-60 aione-search-item ">Hybrid Bootstrap Admin Template
-                                       </p>
+                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/corporate.jpeg" alt="template1" /></a>
+                                       
+                                       <a class="grey darken-1" href="http://manage.aioneframework.com/templates/template.html"><p class="aione-align-center line-height-60 aione-search-item">Hybrid Bootstrap Admin Template
+                                       </p></a>
                                     </div>
                                  </div>
-                                 <div class="ac l33 m50 s100 pt-20">
+                                 <div class="ac l33 m50 s100 pv-15">
                                     <div class="p-2 aione-border templte-hover">
-                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/template-cor.png"/></a>
-                                       <p class="aione-align-center line-height-60 aione-search-item">Multipurpose Website Template</p>
+                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/corporate.jpeg" alt="template2"/></a>
+                                       <a class="grey darken-1" href="http://manage.aioneframework.com/templates/template.html"><p class="aione-align-center line-height-60 aione-search-item">Multipurpose Website Template</p></a>
                                     </div>
                                  </div>
-                                 <div class="ac l33 m50 s100 pt-20">
+                                 <div class="ac l33 m50 s100 pv-15">
                                     <div class="p-2 aione-border templte-hover">
-                                       <a href="http://manage.aioneframework.com/templates/template.html"  target="_blank"><img src="assets/images/template-cor.png"/></a>
-                                       <p class="aione-align-center line-height-60 aione-search-item">Responsive Template</p>
-                                    </div>
-                                 </div>
-                                 <div class="clear"></div>
-                                 <div class="ac l33 m50 s100 mb-10 ">
-                                    <div class="p-2 aione-border templte-hover">
-                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/template-cor.png"/></a>
-                                       <p class="aione-align-center line-height-60 aione-search-item">Corportaive Theme</p>
-                                    </div>
-                                 </div>
-                                 <div class="ac l33 m50 s100">
-                                    <div class="p-2 aione-border templte-hover">
-                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/template-cor.png"/></a>
-                                       <p class="aione-align-center line-height-60 aione-search-item">Responsive Corportaive Theme</p>
-                                    </div>
-                                 </div>
-                                 <div class="ac l33 m50 s100">
-                                    <div class="p-2 aione-border templte-hover">
-                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/template-cor.png"/></a>
-                                       <p class="aione-align-center line-height-60 aione-search-item">HTML Website Template</p>
+                                       <a href="http://manage.aioneframework.com/templates/template.html"  target="_blank"><img src="assets/images/corporate.jpeg" alt="template3"/></a>
+                                       <a class="grey darken-1" href="http://manage.aioneframework.com/templates/template.html">
+                                       <p class="aione-align-center line-height-60 aione-search-item">Responsive Template</p></a>
                                     </div>
                                  </div>
                                  <div class="clear"></div>
-                                 <div class="ac l33 m50 s100 mb-10">
+                                 <div class="ac l33 m50 s100 pv-15 ">
                                     <div class="p-2 aione-border templte-hover">
-                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/template-cor.png"/></a>
-                                       <p class="aione-align-center line-height-60 aione-search-item">Free Fitness Website Template</p>
+                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/corporate.jpeg" alt="template4"/></a>
+                                       <a class="grey darken-1" href="http://manage.aioneframework.com/templates/template.html">
+                                       <p class="aione-align-center line-height-60 theme aione-search-item">Corporative theme</p>
+                                    </a>
                                     </div>
                                  </div>
-                                 <div class="ac l33 m50 s100">
+                                 <div class="ac l33 m50 s100 pv-15">
                                     <div class="p-2 aione-border templte-hover">
-                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/template-cor.png"/></a>
-                                       <p class="aione-align-center line-height-60 aione-search-item">Best Event Management Responsive Design</p>
+                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/corporate.jpeg" alt="template5"/></a>
+                                       <a class="grey darken-1" href="http://manage.aioneframework.com/templates/template.html">
+                                       <p class="aione-align-center line-height-60 theme aione-search-item">Responsive Corporative Theme</p></a>
                                     </div>
                                  </div>
-                                 <div class="ac l33 m50 s100">
+                                 <div class="ac l33 m50 s100 pv-15">
                                     <div class="p-2 aione-border templte-hover">
-                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/template-cor.png"/></a>
-                                       <p class="aione-align-center line-height-60 aione-search-item">Bussiness Responsive Template</p>
+                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/corporate.jpeg" alt="template6"/></a>
+                                       <a class="grey darken-1" href="http://manage.aioneframework.com/templates/template.html">
+                                       <p class="aione-align-center line-height-60 aione-search-item">HTML Website Template</p></a>
                                     </div>
                                  </div>
+                                 <div class="clear"></div>
+                                 <div class="ac l33 m50 s100 pv-15">
+                                    <div class="p-2 aione-border templte-hover">
+                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/corporate.jpeg" alt="template7"/></a>
+                                       <a class="grey darken-1" href="http://manage.aioneframework.com/templates/template.html">
+                                       <p class="aione-align-center line-height-60 aione-search-item">Free Fitness Website Template</p></a>
+                                    </div>
+                                 </div>
+                                 <div class="ac l33 m50 s100 pv-15">
+                                    <div class="p-2 aione-border templte-hover">
+                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/corporate.jpeg" alt="template8"/></a>
+                                       <a class="grey darken-1" href="http://manage.aioneframework.com/templates/template.html">
+                                       <p class="aione-align-center line-height-60 aione-search-item">Best Event Management Responsive Design</p></a>
+                                    </div>
+                                 </div>
+                                 <div class="ac l33 m50 s100 pv-15">
+                                    <div class="p-2 aione-border templte-hover">
+                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/corporate.jpeg" alt="template9"/></a>
+                                       <a class="grey darken-1" href="http://manage.aioneframework.com/templates/template.html">
+                                       <p class="aione-align-center line-height-60 aione-search-item">Bussiness Responsive Template</p></a>
+                                    </div>
+                                 </div>
+                                 <div class="clear"></div>
+                                 <div class="ac l33 m50 s100 pv-15">
+                                    <div class="p-2 aione-border templte-hover">
+                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/corporate.jpeg" alt="template10"/></a>
+                                       <a class="grey darken-1" href="http://manage.aioneframework.com/templates/template.html">
+                                       <p class="aione-align-center line-height-60 aione-search-item">Hybrid Bootstrap Admin Template</p></a>
+                                    </div>
+                                 </div>
+                                 <div class="ac l33 m50 s100 pv-15">
+                                    <div class="p-2 aione-border templte-hover">
+                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/corporate.jpeg" alt="template11"/></a>
+                                       <a class="grey darken-1" href="http://manage.aioneframework.com/templates/template.html">
+                                       <p class="aione-align-center line-height-60 aione-search-item">Multipurpose Website Template</p></a>
+                                    </div>
+                                 </div>
+                                  <div class="ac l33 m50 s100 pt-20">
+                                    <div class="p-2 aione-border templte-hover">
+                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/corporate.jpeg" alt="template12"/></a>
+                                       <a class="grey darken-1" href="http://manage.aioneframework.com/templates/template.html">
+                                       <p class="aione-align-center line-height-60 aione-search-item">Responsive Template</p></a>
+                                    </div>
+                                 </div>
+                                 <div class="clear"></div>
+                                 <div class="ac l33 m50 s100 pv-15 ">
+                                    <div class="p-2 aione-border templte-hover">
+                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/corporate.jpeg" alt="template13"/></a>
+                                       <a class="grey darken-1" href="http://manage.aioneframework.com/templates/template.html">
+                                       <p class="aione-align-center line-height-60 type aione-search-item">Corporative Theme</p></a>
+                                    </div>
+                                 </div>
+                                 <div class="ac l33 m50 s100 pv-15 ">
+                                    <div class="p-2 aione-border templte-hover">
+                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/corporate.jpeg" alt="template14"/></a>
+                                       <a class="grey darken-1" href="http://manage.aioneframework.com/templates/template.html">
+                                       <p class="aione-align-center line-height-60 type aione-search-item">Responsive Corporative Theme</p></a>
+                                    </div>
+                                 </div>
+                                 <div class="ac l33 m50 s100 pv-15">
+                                    <div class="p-2 aione-border templte-hover">
+                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/corporate.jpeg" alt="template15"/></a>
+                                       <a class="grey darken-1" href="http://manage.aioneframework.com/templates/template.html">
+                                       <p class="aione-align-center line-height-60 aione-search-item">HTML Website Template</p></a>
+                                    </div>
+                                 </div>
+                                 <div class="clear"></div>
+                                 <div class="ac l33 m50 s100 pv-15 ">
+                                    <div class="p-2 aione-border templte-hover">
+                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/corporate.jpeg" alt="template16"/></a>
+                                       <a class="grey darken-1" href="http://manage.aioneframework.com/templates/template.html">
+                                       <p class="aione-align-center line-height-60 aione-search-item">Free Fitness Website Template</p></a>
+                                    </div>
+                                 </div>
+                                 <div class="ac l33 m50 s100 pv-15">
+                                    <div class="p-2 aione-border templte-hover">
+                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/corporate.jpeg" alt="template17"/></a>
+                                       <a class="grey darken-1" href="http://manage.aioneframework.com/templates/template.html">
+                                       <p class="aione-align-center line-height-60 aione-search-item">Best Event Management Responsive Design</p></a>
+                                    </div>
+                                 </div>
+                                 <div class="ac l33 m50 s100 pv-15 ">
+                                    <div class="p-2 aione-border templte-hover">
+                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/corporate.jpeg" alt="template18"/></a>
+                                       <a class="grey darken-1" href="http://manage.aioneframework.com/templates/template.html">
+                                       <p class="aione-align-center line-height-60 aione-search-item">Bussiness Responsive Template</p></a>
+                                    </div>
+                                 </div>
+                                 <div class="clear"></div>
                               </div>
-                           </section>
-                           <section>
-                              <div class="ar ph-7p pb-5p">
-                                 <div class="ac l33 m50 s100 mb-10 pt-20">
-                                    <div class="p-2 aione-border templte-hover">
-                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/template-cor.png"/></a>
-                                       <p class="aione-align-center line-height-60 aione-search-item">Hybrid Bootstrap Admin Template</p>
-                                    </div>
-                                 </div>
-                                 <div class="ac l33 m50 s100 pt-20">
-                                    <div class="p-2 aione-border templte-hover">
-                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/template-cor.png"/></a>
-                                       <p class="aione-align-center line-height-60 aione-search-item">Multipurpose Website Template</p>
-                                    </div>
-                                 </div>
-                                 <div class="ac l33 m50 s100 pt-20">
-                                    <div class="p-2 aione-border templte-hover">
-                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/template-cor.png"/></a>
-                                       <p class="aione-align-center line-height-60 aione-search-item">Responsive Template</p>
-                                    </div>
-                                 </div>
-                                 <div class="clear"></div>
-                                 <div class="ac l33 m50 s100 mb-10 ">
-                                    <div class="p-2 aione-border templte-hover">
-                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/template-cor.png"/></a>
-                                       <p class="aione-align-center line-height-60 aione-search-item">Corportaive Theme</p>
-                                    </div>
-                                 </div>
-                                 <div class="ac l33 m50 s100 ">
-                                    <div class="p-2 aione-border templte-hover">
-                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/template-cor.png"/></a>
-                                       <p class="aione-align-center line-height-60 aione-search-item">Responsive Corportaive Theme</p>
-                                    </div>
-                                 </div>
-                                 <div class="ac l33 m50 s100 ">
-                                    <div class="p-2 aione-border templte-hover">
-                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/template-cor.png"/></a>
-                                       <p class="aione-align-center line-height-60 aione-search-item">HTML Website Template</p>
-                                    </div>
-                                 </div>
-                                 <div class="clear"></div>
-                                 <div class="ac l33 m50 s100 mb-10 ">
-                                    <div class="p-2 aione-border templte-hover">
-                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/template-cor.png"/></a>
-                                       <p class="aione-align-center line-height-60 aione-search-item">Free Fitness Website Template</p>
-                                    </div>
-                                 </div>
-                                 <div class="ac l33 m50 s100 ">
-                                    <div class="p-2 aione-border templte-hover">
-                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/template-cor.png"/></a>
-                                       <p class="aione-align-center line-height-60 aione-search-item">Best Event Management Responsive Design</p>
-                                    </div>
-                                 </div>
-                                 <div class="ac l33 m50 s100 ">
-                                    <div class="p-2 aione-border templte-hover">
-                                       <a href="http://manage.aioneframework.com/templates/template.html" target="_blank"><img src="assets/images/template-cor.png"/></a>
-                                       <p class="aione-align-center line-height-60 aione-search-item">Bussiness Responsive Template</p>
-                                    </div>
-                                 </div>
-                                 <div class="clear"></div>
-                              </div>
+                              </div><!--end of row-->
                            </section>
                         </div>
                      </div>
@@ -222,6 +252,12 @@
             <!-- .aione-footer -->
             <div id="aione_copyright" class="aione-copyright dark load-template">
             </div>
+            <script type="text/javascript">
+               $(document).on('click','.search-keyword',function(){
+                  var keyword = $(this).html();
+                  $('.field').find('.aione-search-input').val(keyword).trigger("focus");             
+               })
+            </script>
          </div>
       </div>
    </body>

@@ -14,26 +14,47 @@
       body{
       font-family: 'Nunito', sans-serif;
       }
-      .btn1:hover
+      .downloadbtn:hover
       {
-      background-color:#4caf50;
+      background-color:white;
+      border :1px solid #009688;
+      color: #009688;
       }
-      .btn2:hover
+      .backlinkbtn:hover
       {
-      background-color:#03a9f4;
+      background-color:#0084b4;
       }
-      .btn3:hover
+      .backlinkbtn
+      {
+      background-color:#0084b4;
+      }
+      .p:hover
       {
       background-color:#121212;
       }
-      .btn1
+      .downloadbtn
       {
       width: 100%;
+      background-color:white;
+      color:#0084b4;
+      border: 1px solid #0084b4;
       }
-      .bt
+      .previewbtn
       {
       width: 100%;
+      height: 64px;
+      background-color: #0084b4;
       }
+       .previewbtn:hover
+       {
+         background-color:#0084b4;
+       }
+      
+      .aione-copyright
+         {
+         padding:0px;
+         border-top:none;
+         }
       .preview-image-wrapper{
          height: 400px;
          overflow: hidden;
@@ -73,18 +94,19 @@
                                     </div>
                                     <div class="preview-image-wrapper">
                                        <div class="preview-image">
-                                          <img src="assets/images/website_aioneframework.png" >
+                                          <img src="assets/images/template-cor.png">
                                        </div>
                                     </div>
                                     <div class="button aione-align-center pt-20">
-                                       <button class="button btn2 bg-light-blue"><i class="ion-link"></i> Backlinks</button>
+                                       <button class="aione-button backlinkbtn"><i class="ion-link"></i> Backlinks</button>
                                     </div>
                                  </div>
                                  <div class="ac l30 m40 s100">
                                     <div class="aione-border p-20">
                                        <div>
-                                          <a href="http://manage.aioneframework.com/templates/preview.html" class="bg-grey bg-darken-2 btn3 white" target="_blank"><button class="button bg-grey bg-darken-2 bt"><i class="ion-ios-pulse-strong"></i>Live Preview</button> </a>
-                                          <button class="button btn1 bg-green"><i class="ion-arrow-down-a"></i> Download</button>
+                                          <a href="http://manage.aioneframework.com/templates/preview.html" class="bg-grey bg-darken-2 prevbtn white" target="_blank">
+                                             <button class="aione-button previewbtn"><i class="ion-ios-pulse-strong  pr-9"></i>Live Preview</button> </a>
+                                          <button class="aione-button downloadbtn"><i class="ion-arrow-down-a pr-11"></i> Download</button>
                                        </div>
                                        <div class="price pt-15">
                                           <h5 class="font-weight-600 display-inline-block aione-border-bottom border-style-dashed pb-10">Price:  $<span class="font-size-40 orange" style="vertical-align:bottom;">39</span></h5>
@@ -116,10 +138,10 @@
          </div>
          <!-- Footer section -->
          <div id="aione_footer" class="aione-footer dark load-template">
-         </div>
-         <!-- .aione-footer -->
-         <div id="aione_copyright" class="aione-copyright dark load-template ">
-         </div>
+            </div>
+            <!-- .aione-footer -->
+            <div id="aione_copyright" class="aione-copyright dark load-template">
+            </div>
       </div>
    </body>
 </html>
